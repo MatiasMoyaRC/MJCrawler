@@ -1,6 +1,4 @@
-# from datetime import datetime
-# import lxml.html as html
-# import saver
+# -*- coding: utf-8 -*-
 
 
 class Scraper:
@@ -9,12 +7,9 @@ class Scraper:
         self.XPATH_PROD_DET_1 = '//div[@class="align-self-center"]//text()'  # Nombre y precio
         self.XPATH_PROD_DET_2 = '//div[@class="align-self-center"]/p/text()'  # Descripcion
 
-    def crear_dic(self, parsed, categoria, marca):
+    def create_dic(self, parsed, categoria, marca):
         try:
-
-            # today = datetime.today().strftime("%d/%m/%Y, %H:%M:%S")
             nombre_precio = parsed.xpath(self.XPATH_PROD_DET_1)
-            # description = parsed.xpath(self.XPATH_PROD_DET_2)
             nombre = nombre_precio[1]
             nombre = nombre.replace('  ', '')
 

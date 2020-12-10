@@ -1,12 +1,11 @@
+# -*- coding: utf-8 -*-
 import crawler
-# import scraper
-# import saver
 from datetime import datetime
 
 HOME_URL = "https://mhwc.brytemap.com"
 
 
-def test():
+def run():
     timestamp = datetime.now().strftime("%H:%M:%S")
     print("{} - Iniciando crawl".format(timestamp))
 
@@ -17,18 +16,5 @@ def test():
     print("{} - Terminado".format(timestamp))
 
 
-def run():
-    pass
-    # timestamp = datetime.now().strftime("%H:%M:%S")
-    # print("{} - Guardando la info".format(timestamp))
-    #
-    # save_in = saver.DataB("Productos_Planta.csv")
-    # save_in.save_csv(precios_dic)
-    # driver.quit()
-    #
-    # timestamp = datetime.now().strftime("%H:%M:%S")
-    # print("{} - Todo OK".format(timestamp))
-
-
 if __name__ == '__main__':
-    test()
+    run()

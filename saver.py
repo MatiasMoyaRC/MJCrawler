@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import csv
 import os
 
@@ -5,7 +6,7 @@ import os
 class DataB:
 
     def __init__(self):
-        self.__file_name = "Prueba2Crawler.csv"
+        self.__file_name = "PruebaMJCrawler.csv"
 
     def save_csv(self, producto_dic):
         with open('{}'.format(self.__file_name), 'a+', newline='') as f:
